@@ -1239,7 +1239,11 @@ const YearData kEraData[] = {
     1989,
     "平成",
     "へいせい",
-  }
+  }, {
+    2019,
+    "令和",
+    "れいわ",
+  },
 };
 
 const YearData kNorthEraData[] = {
