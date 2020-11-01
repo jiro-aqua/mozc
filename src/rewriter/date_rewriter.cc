@@ -1727,6 +1727,7 @@ bool DateRewriter::ConvertDateWithYear(uint32 year, uint32 month, uint32 day,
     return false;
   }
   // Generate "Y/MM/DD", "Y-MM-DD" and "Y年M月D日" formats.
+  results->push_back(Util::StringPrintf("%d%2.2d%2.2d", year, month, day));
   results->push_back(Util::StringPrintf("%d/%2.2d/%2.2d", year, month, day));
   results->push_back(Util::StringPrintf("%d-%2.2d-%2.2d", year, month, day));
   results->push_back(Util::StringPrintf("%d年%d月%d日", year, month, day));
