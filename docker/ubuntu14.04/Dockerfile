@@ -65,16 +65,16 @@ RUN mkdir -p ${ANDROID_HOME}/extras/android
 RUN curl -LO https://dl.google.com/dl/android/repository/support_r23.1.1.zip && unzip -d ${ANDROID_HOME}/extras/android support_r23.1.1.zip support/v13/android-support-v13.jar && rm support_r23.1.1.zip
 
 ## NaCl SDK
-RUN curl -LO http://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/nacl_sdk.zip && unzip nacl_sdk.zip && rm nacl_sdk.zip
-RUN cd nacl_sdk && ./naclsdk install pepper_49
-ENV NACL_SDK_ROOT /home/mozc_builder/work/nacl_sdk/pepper_49
+#RUN curl -LO http://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/nacl_sdk.zip && unzip nacl_sdk.zip && rm nacl_sdk.zip
+#RUN cd nacl_sdk && ./naclsdk install pepper_49
+#ENV NACL_SDK_ROOT /home/mozc_builder/work/nacl_sdk/pepper_49
 
 ## depot_tools for Ninja prebuilt
 RUN git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ENV PATH $PATH:/home/mozc_builder/work/depot_tools
 
 # check out Mozc source with submodules
-RUN git clone https://github.com/google/mozc.git -b master --single-branch --recursive
+RUN git clone https://github.com/jiro-aqua/mozc.git -b master --single-branch --recursive
 
 WORKDIR /home/mozc_builder/work/mozc/src
 ENTRYPOINT bash

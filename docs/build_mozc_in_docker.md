@@ -11,7 +11,7 @@ Currently, only Ubuntu 14.04 is tested to host the Docker container to build Moz
 
 ```
 mkdir ubuntu14.04 && cd ubuntu14.04
-curl -O https://raw.githubusercontent.com/google/mozc/master/docker/ubuntu14.04/Dockerfile
+curl -O https://raw.githubusercontent.com/jiro-aqua/mozc/master/docker/ubuntu14.04/Dockerfile
 sudo docker build --rm -t $USER/mozc_ubuntu14.04 .
 sudo docker run --interactive --tty --rm $USER/mozc_ubuntu14.04
 ```
