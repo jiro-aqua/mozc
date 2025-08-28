@@ -52,7 +52,8 @@
       '<(platform_data_dir)/dictionary07.txt',
       '<(platform_data_dir)/dictionary08.txt',
       '<(platform_data_dir)/dictionary09.txt',
-      '<(platform_data_dir)/mozc-ut.txt',
+      '<(platform_data_dir)/mozc-ut01.txt',
+      '<(platform_data_dir)/mozc-ut02.txt',
       '<(platform_data_dir)/reading_correction.tsv',
     ],
     # Hex-escaped string of "\xEFMOZC\r\n"
