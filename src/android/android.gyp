@@ -508,6 +508,9 @@
          # -s: Strip unused symbols
          # --version-script: Remove almost all exportable symbols
          '-Wl,-s,--version-script,<(abs_android_dir)/libmozc.lds',
+         '-Wl,-z,max-page-size=16384',
+         '-Wl,-z,common-page-size=16384',
+
       ],
     },
     {

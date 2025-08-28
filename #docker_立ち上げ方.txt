@@ -1,0 +1,7 @@
+#docker 立ち上げ方
+sudo docker run --interactive --tty --rm $USER/mozc_ubuntu14.04
+sudo docker ps
+
+sudo docker cp ad8362bb33c5:/home/mozc_builder/work/mozc/src/android.zip ./
+
+
